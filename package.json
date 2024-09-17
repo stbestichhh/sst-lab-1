@@ -5,10 +5,12 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.13.0",
-    "hono": "^4.6.2"
+    "hono": "^4.6.2",
+    "ping": "^0.4.4"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
+    "@types/ping": "^0.4.4",
     "tsx": "^4.7.1"
   }
 }

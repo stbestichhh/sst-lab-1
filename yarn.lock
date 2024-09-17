@@ -234,6 +234,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/ping@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "@types/ping@npm:0.4.4"
+  checksum: 10c0/8446425a8a71d374b19c9acd506ebb0bf35688fef3d8ec70e2c9204259e78c46515ed59202a997ed6efd7a5d6d4f3a5d5140278021dfad94e119ef3cf855504c
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:^2.0.0":
   version: 2.0.0
   resolution: "abbrev@npm:2.0.0"
@@ -914,6 +921,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ping@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "ping@npm:0.4.4"
+  checksum: 10c0/e41d5470aee2648a70ab116181176f1065e617b6e537c091dc5f53d85df338a0f06f4708879e2c6bc238d87b7c692f40dfd4aebc13cdb8e0ab358c9ac395772d
+  languageName: node
+  linkType: hard
+
 "proc-log@npm:^4.1.0, proc-log@npm:^4.2.0":
   version: 4.2.0
   resolution: "proc-log@npm:4.2.0"
@@ -1074,7 +1088,9 @@ __metadata:
   dependencies:
     "@hono/node-server": "npm:^1.13.0"
     "@types/node": "npm:^20.11.17"
+    "@types/ping": "npm:^0.4.4"
     hono: "npm:^4.6.2"
+    ping: "npm:^0.4.4"
     tsx: "npm:^4.7.1"
   languageName: unknown
   linkType: soft
