@@ -13,7 +13,7 @@ app.get('/healthcheck', async (c: Context) => {
 });
 
 const port = Number(process.env.PORT) || 9110;
-const host = 'localhost';
+const host = String(process.env.DEPLOY_URL) || 'localhost';
 console.log(`Server is running on http://${host}:${port}`);
 
 serve({

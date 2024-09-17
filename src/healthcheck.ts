@@ -19,7 +19,8 @@ export const healthcheck = async (c: Context) => {
   };
 
   try {
-    healthcheckData.ping = await pingCheck('localhost');
+    const url = String(process.env.DEPLOY_URL) || 'localhost';
+    healthcheckData.ping = await pingCheck(url);
     return c.json(healthcheckData);
   } catch (e) {
     const error = e as Error;
