@@ -6,7 +6,6 @@
     "dev": "tsx watch src/index.ts",
     "build": "tsc"
   },
-  "type": "module",
   "dependencies": {
     "@hono/node-server": "^1.13.0",
     "hono": "^4.6.2",
