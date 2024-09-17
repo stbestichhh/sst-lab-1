@@ -8,7 +8,8 @@ app.get('/', (c) => {
 })
 
 const port = 9110;
-console.log(`Server is running on port ${port}`);
+const host = 'localhost';
+console.log(`Server is running on http://${host}:${port}`);
 
 serve({
   fetch: app.fetch,
