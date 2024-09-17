@@ -1,11 +1,16 @@
 import { serve } from '@hono/node-server'
-import { Hono } from 'hono'
+import { Context, Hono } from 'hono'
+import { healthcheck } from './healthcheck';
 
 const app = new Hono();
 
-app.get('/', (c) => {
+app.get('/', (c: Context) => {
   return c.text('Hello Stranger!');
-})
+});
+
+app.get('/healthcheck', async (c: Context) => {
+  return await healthcheck(c);
+});
 
 const port = 9110;
 const host = 'localhost';
