@@ -20,7 +20,6 @@ export const healthcheck = async (c: Context) => {
 
   try {
     healthcheckData.ping = await pingCheck('localhost');
-    throw new Error();
     return c.json(healthcheckData);
   } catch (e) {
     const error = e as Error;
