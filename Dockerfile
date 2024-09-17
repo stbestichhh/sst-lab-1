@@ -8,6 +8,7 @@ WORKDIR /app
 COPY package*json tsconfig.json src ./
 
 RUN yarn
+RUN rm -rf dist
 RUN yarn build
 
 FROM base AS runner

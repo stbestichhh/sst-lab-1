@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  sst-lab-1:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      PORT: "9111"
+    ports:
+      - "9110:9110"

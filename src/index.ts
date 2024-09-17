@@ -12,7 +12,7 @@ app.get('/healthcheck', async (c: Context) => {
   return await healthcheck(c);
 });
 
-const port = 9110;
+const port = Number(process.env.PORT) || 9110;
 const host = 'localhost';
 console.log(`Server is running on http://${host}:${port}`);
 
